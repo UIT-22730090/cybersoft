@@ -16,17 +16,17 @@ public class Bai5 {
 		
 		double giaTienPhaiTra;
 		// mua số lượng 1 đến 49
-		if(soLuong > 0 && soLuong < 50) {
+		if(soLuong > 0 && soLuong <= 50) {
 			giaTienPhaiTra = gia * soLuong;
 			System.out.println("Giá tiền phải trả cho " + ten + " là: " + giaTienPhaiTra);
 		}
 		// mua số lượng 50 đến 100 sẽ được giảm 8%
-		else if(soLuong >= 50 && soLuong <=100) {
+		else if(soLuong > 50 && soLuong <=100) {
 			giaTienPhaiTra = (gia * soLuong) * 0.92;
 			System.out.println("Giá tiền phải trả cho " + ten + " là: " + giaTienPhaiTra);
 		}
 		// mua số lượng trên 100 thì số lượng từ 100 trở đi sẽ được giảm 12%
-		else if(soLuong >= 100) {
+		else if(soLuong > 100) {
 			giaTienPhaiTra = (gia * soLuong) * 0.88;
 			System.out.println("Giá tiền phải trả cho " + ten + " là: " + giaTienPhaiTra);
 		}
