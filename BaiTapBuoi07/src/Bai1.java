@@ -48,12 +48,12 @@ public class Bai1 {
 		}
 		
 		double tongTien = 0;
-		if(soKm < 1) {
-			tongTien = giaKmDauTien;
-		} else if(soKm <= 19) {
+		if(soKm <= 1) {
+			tongTien = giaKmDauTien * soKm;
+		} else if(soKm > 1 && soKm <= 19) {
 			tongTien = giaKmDauTien + (soKm - 1) * giaKm1Den19;
 		} else {
-			tongTien = giaKmDauTien + (soKm - 1) * giaKmTren19;
+			tongTien = giaKmDauTien + 18 * giaKm1Den19 + (soKm - 19) * giaKmTren19;
 		}
 		
 		tongTien += thoiGian * giaThoiGian;
