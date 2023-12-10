@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Your Navbar</title>
+    <style>
+        body {
+            padding-top: 56px;
+        }
+
+        .navbar {
+            background-color: #e6e6e6;
+            /* Light gray background color */
+        }
+
+        .navbar-brand {
+            color: #000;
+            font-weight: bold;
+            /* Black text color for the brand */
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-link {
+            color: #000;
+            /* Black text color for the navigation links */
+        }
+
+        .navbar-toggler-icon {
+            background-color: #000;
+            /* Black color for the toggle icon */
+        }
+
+
+        .dropdown-menu {
+            background-color: #e6e6e6;
+            /* Light gray background color for the dropdown menu */
+        }
+
+        .dropdown-menu a {
+            color: #000;
+            /* Black text color for dropdown items */
+        }
+
+        .carousel-item {
+            position: relative;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            /* Move the caption 50% down from the top */
+            left: 50%;
+            /* Move the caption 50% to the right from the left */
+            transform: translate(-50%, -50%);
+            /* Center the caption precisely */
+            text-align: center;
+            /* Center text horizontally */
+            color: white;
+            /* Set the text color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="#"> Cybersoft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto background-gray"> <!-- Move navbar-nav to the right -->
+                    <li class="nav-item">
+                        <a class="nav-link active bold" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <button class="btn btn-danger" type="button">Get Started</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://c4.wallpaperflare.com/wallpaper/297/22/531/lake-blue-moonlight-moon-wallpaper-preview.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus? Quis, fuga iusto, quam
+                        est laboriosam, beatae ea earum id molestias similique laudantium eveniet animi possimus labore
+                        facere odit rerum!</p>
+                    <button class="btn btn-danger" type="button">Read more</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://c4.wallpaperflare.com/wallpaper/666/665/244/the-magic-islands-of-lofoten-norway-europe-winter-morning-light-landscape-desktop-hd-wallpaper-for-pc-tablet-and-mobile-3840%C3%972160-wallpaper-preview.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus? Quis, fuga iusto, quam
+                        est laboriosam, beatae ea earum id molestias similique laudantium eveniet animi possimus labore
+                        facere odit rerum!</p>
+                    <button class="btn btn-danger" type="button">Read more</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus? Quis, fuga iusto, quam
+                        est laboriosam, beatae ea earum id molestias similique laudantium eveniet animi possimus labore
+                        facere odit rerum!</p>
+                    <button class="btn btn-danger" type="button">Read more</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Your content goes here -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
